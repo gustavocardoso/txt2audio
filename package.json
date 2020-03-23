@@ -1,0 +1,37 @@
+{
+  "name": "txt2audio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavocardoso/accuweather-wrapper.git"
+  },
+  "keywords": [
+    "js",
+    "node",
+    "api",
+    "google",
+    "text2speech",
+    "googleapi",
+    "lib",
+    "package",
+    "npm",
+    "audio",
+    "mp3",
+    "ogg",
+    "vorbis"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Cardoso",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/text-to-speech": "^2.3.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "0.0.1-security",
+    "util": "^0.12.2",
+    "yurnalist": "^2.0.0"
+  }
+}
