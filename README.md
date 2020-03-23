@@ -1,5 +1,7 @@
 # `txt2audio`
 
+<img src="https://img.shields.io/github/package-json/v/gustavocardoso/txt2audio?style=flat-square"> <img src="https://img.shields.io/github/downloads/gustavocardoso/txt2audio/total?style=flat-square"> <img src="https://img.shields.io/github/license/gustavocardoso/txt2audio?style=flat-square" alt="License: MIT">
+
 A small lib to convert text strings to audio files (mp3 & ogg) using Google Text to Speech api.
 
 It uses:
@@ -18,28 +20,28 @@ npm install txt2audio
 ## How to use it
 
 ```javascript
-const Txt2Audio = require('txt2audio')
+const Txt2Audio = require("txt2audio");
 ```
 
 Then you should declare an object with the options you need.
 
 ```javascript
-const path = require('path')
+const path = require("path");
 
 let txt2audio = Txt2Audio({
-  text: 'Fuck corona virus',
-  fileName: 'fck-corona',
-  path: path.resolve(__dirname, 'audio'),
-  gender: 'female',
+  text: "Fuck corona virus",
+  fileName: "fck-corona",
+  path: path.resolve(__dirname, "audio"),
+  gender: "female",
   ogg: true,
   debug: true
-})
+});
 ```
 
 The **Txt2Audio** will return another function, **generateAudio**, which will generate the audio files and save them in the given path.
 
 ```javascript
-txt2audio.generateAudio()
+txt2audio.generateAudio();
 ```
 
 ### Options
