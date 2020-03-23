@@ -11,6 +11,10 @@ It uses:
 - [MP3](https://en.wikipedia.org/wiki/MP3)
 - [Ogg Vorbis](https://xiph.org/vorbis/)
 
+**Important!**
+
+To use Google Text to Speech Api you should, first, enable the api and set up an authentication method. You can read more [here](https://cloud.google.com/text-to-speech/docs/quickstart-client-libraries).
+
 ## Installation
 
 ```bash
