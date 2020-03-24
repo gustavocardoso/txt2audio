@@ -53,7 +53,7 @@ txt2audio.generateAudio();
 | Argument   | Type     | Default | Description                                      |
 | ---------- | -------- | ------- | ------------------------------------------------ |
 | `text`     | _string_ |         | text from which the audio file will be generated |
-| `fileName` | _string_ |         | name of the generated file                       |
+| `filename` | _string_ |         | name of the generated file                       |
 | `path`     | _string_ |         | folder where the file will be saved              |
 | `gender`   | _string_ | female  | male or female                                   |
 | `ogg`      | _bool_   | false   | generate ogg version from the audio file         |
