@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gustavocardoso/accuweather-wrapper.git"
+    "url": "git+https://github.com/gustavocardoso/txt2audio.git"
   },
   "keywords": [
     "js",
