@@ -2,34 +2,24 @@ const textToSpeech = require('@google-cloud/text-to-speech')
 const fs = require('fs')
 const util = require('util')
 const report = require('yurnalist')
-const ffmpeg = require('fluent-ffmpeg')
+
+const convertToOgg = require('./ogg')
 
 const client = new textToSpeech.TextToSpeechClient()
-
-const convertAudioToOgg = async (fileName, path) => {
-  return new Promise(async (resolve, reject) => {
-    return ffmpeg()
-      .input(`${path}/${fileName}.mp3`)
-      .toFormat('ogg')
-      .output(`${path}/${fileName}.ogg`)
-      .on('end', resolve)
-      .on('error', reject)
-      .run()
-  })
-}
 
 const text2Audio = ({
   text,
   filename,
   path,
   ogg = false,
+  voicename = 'en-US-Standard-CS',
   gender = 'female',
   debug = false
 }) => {
   gender = gender.toUpperCase()
   const request = {
     input: { text },
-    voice: { languageCode: 'en-US-Standard-C', ssmlGender: gender },
+    voice: { languageCode: voicename, ssmlGender: gender },
     audioConfig: { audioEncoding: 'MP3' }
   }
 
@@ -57,7 +47,7 @@ const text2Audio = ({
 
         if (ogg) {
           spinner.tick(`Converting ${fileNameMp3} to ogg`)
-          await convertAudioToOgg(filename, path)
+          await convertToOgg(filename, path)
         }
 
         report.success(`mp3 and ogg files for: ${text}`)
