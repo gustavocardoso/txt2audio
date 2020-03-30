@@ -2,7 +2,7 @@
 
 A small lib to convert text strings to audio files (mp3 & ogg) using Google Text to Speech api.
 
-<img src="https://img.shields.io/github/package-json/v/gustavocardoso/txt2audio?style=flat-square"> <img src="https://img.shields.io/github/downloads/gustavocardoso/txt2audio/total?style=flat-square"> <img src="https://img.shields.io/github/license/gustavocardoso/txt2audio?style=flat-square" alt="License: MIT">
+<img src="https://img.shields.io/github/package-json/v/gustavocardoso/txt2audio?style=flat-square"> <img src="https://img.shields.io/github/license/gustavocardoso/txt2audio?style=flat-square" alt="License: MIT">
 
 It uses:
 
