@@ -36,7 +36,7 @@ let txt2audio = Txt2Audio({
   text: "Fuck corona virus",
   filename: "fck-corona",
   path: path.resolve(__dirname, "audio"),
-  voicename: "pt-BR-Wavenet-A",
+  voicename: "en-US",
   gender: "female",
   ogg: true,
   debug: true
