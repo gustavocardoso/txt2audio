@@ -24,44 +24,44 @@ npm install txt2audio
 ## How to use it
 
 ```javascript
-const Txt2Audio = require("txt2audio");
+const Txt2Audio = require('txt2audio')
 ```
 
 Then you should declare an object with the options you need.
 
 ```javascript
-const path = require("path");
+const path = require('path')
 
 let txt2audio = Txt2Audio({
-  text: "Fuck corona virus",
-  filename: "fck-corona",
-  path: path.resolve(__dirname, "audio"),
-  voicename: "en-US",
-  gender: "female",
+  text: 'Fuck corona virus',
+  filename: 'fck-corona',
+  path: path.resolve(__dirname, 'audio'),
+  languageCode: 'en-US',
+  gender: 'female',
   ogg: true,
   debug: true
-});
+})
 ```
 
 The **Txt2Audio** will return another function, **generateAudio**, which will generate the audio files and save them in the given path.
 
 ```javascript
-txt2audio.generateAudio();
+txt2audio.generateAudio()
 ```
 
 ### Options
 
-| Argument    | Type     | Default | Description                                      |
-| ----------- | -------- | ------- | ------------------------------------------------ |
-| `text`      | _string_ |         | text from which the audio file will be generated |
-| `filename`  | _string_ |         | name of the generated file                       |
-| `path`      | _string_ |         | folder where the file will be saved              |
-| `voicename` | _string_ | en-US   | set the language for the api                     |
-| `gender`    | _string_ | female  | male or female                                   |
-| `ogg`       | _bool_   | false   | generate ogg version from the audio file         |
-| `debug`     | _bool_   | false   | prints the request object in the terminal        |
+| Argument       | Type     | Default | Description                                      |
+| -------------- | -------- | ------- | ------------------------------------------------ |
+| `text`         | _string_ |         | text from which the audio file will be generated |
+| `filename`     | _string_ |         | name of the generated file                       |
+| `path`         | _string_ |         | folder where the file will be saved              |
+| `languageCode` | _string_ | en-US   | set the language for the api                     |
+| `gender`       | _string_ | female  | male or female                                   |
+| `ogg`          | _bool_   | false   | generate ogg version from the audio file         |
+| `debug`        | _bool_   | false   | prints the request object in the terminal        |
 
-_You can find a list of **voicename (language code)** and **gender** in the [Google Text to Speech Api documentation](https://cloud.google.com/text-to-speech/docs/voices)._
+_You can find a list of **languageCode** and **gender** in the [Google Text to Speech Api documentation](https://cloud.google.com/text-to-speech/docs/voices)._
 
 ## Contributing
 

@@ -12,14 +12,14 @@ const text2Audio = ({
   filename,
   path,
   ogg = false,
-  voicename = 'en-US',
+  languageCode = 'en-US',
   gender = 'female',
   debug = false
 }) => {
   gender = gender.toUpperCase()
   const request = {
     input: { text },
-    voice: { languageCode: voicename, ssmlGender: gender },
+    voice: { languageCode, ssmlGender: gender },
     audioConfig: { audioEncoding: 'MP3' }
   }
 
