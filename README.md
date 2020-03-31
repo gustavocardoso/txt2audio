@@ -61,7 +61,7 @@ txt2audio.generateAudio();
 | `ogg`       | _bool_   | false   | generate ogg version from the audio file         |
 | `debug`     | _bool_   | false   | prints the request object in the terminal        |
 
-_You can find a list of **voicename** and **gender** in the [Google Text to Speech Api documentation](https://cloud.google.com/text-to-speech/docs/voices)._
+_You can find a list of **voicename (language code)** and **gender** in the [Google Text to Speech Api documentation](https://cloud.google.com/text-to-speech/docs/voices)._
 
 ## Contributing
 
