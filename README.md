@@ -34,7 +34,7 @@ const path = require("path");
 
 let txt2audio = Txt2Audio({
   text: "Fuck corona virus",
-  fileName: "fck-corona",
+  filename: "fck-corona",
   path: path.resolve(__dirname, "audio"),
   voicename: "pt-BR-Wavenet-A",
   gender: "female",
