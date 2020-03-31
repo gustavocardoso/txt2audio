@@ -51,15 +51,15 @@ txt2audio.generateAudio();
 
 ### Options
 
-| Argument    | Type     | Default           | Description                                      |
-| ----------- | -------- | ----------------- | ------------------------------------------------ |
-| `text`      | _string_ |                   | text from which the audio file will be generated |
-| `filename`  | _string_ |                   | name of the generated file                       |
-| `path`      | _string_ |                   | folder where the file will be saved              |
-| `voicename` | _string_ | en-US.            | set the language for the api                     |
-| `gender`    | _string_ | female            | male or female                                   |
-| `ogg`       | _bool_   | false             | generate ogg version from the audio file         |
-| `debug`     | _bool_   | false             | prints the request object in the terminal        |
+| Argument    | Type     | Default | Description                                      |
+| ----------- | -------- | ------- | ------------------------------------------------ |
+| `text`      | _string_ |         | text from which the audio file will be generated |
+| `filename`  | _string_ |         | name of the generated file                       |
+| `path`      | _string_ |         | folder where the file will be saved              |
+| `voicename` | _string_ | en-US   | set the language for the api                     |
+| `gender`    | _string_ | female  | male or female                                   |
+| `ogg`       | _bool_   | false   | generate ogg version from the audio file         |
+| `debug`     | _bool_   | false   | prints the request object in the terminal        |
 
 _You can find a list of **voicename** and **gender** in the [Google Text to Speech Api documentation](https://cloud.google.com/text-to-speech/docs/voices)._
 
