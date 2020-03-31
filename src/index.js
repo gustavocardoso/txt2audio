@@ -12,7 +12,7 @@ const text2Audio = ({
   filename,
   path,
   ogg = false,
-  voicename = 'en-US-Standard-CS',
+  voicename = 'en-US',
   gender = 'female',
   debug = false
 }) => {
